@@ -35,7 +35,7 @@ by [GameDev.tv](https://www.gamedev.tv)
 - [Check Out the Book](https://github.com/aaronmsimon/godot-gamedevtv-godot-c-action-adventure/commit/c1ff5a04186f15101462df3f00442dbaff07ffa7) (1:33)
 
 ### Player Movement
-- Adding Player Animations (14:51)
+- [Adding Player Animations](https://github.com/aaronmsimon/godot-gamedevtv-godot-c-action-adventure/commit/0d0f57ea25a682b17251a7d29ed99b28734e7a1e) (14:51)
 - Attaching Scripts to Nodes (9:45)
 - Configuring Visual Studio Code (3:25)
 - Overriding Methods (9:30)
