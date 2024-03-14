@@ -72,8 +72,10 @@ _data = {
 "Move": SubResource("Animation_mfdut")
 }
 
-[node name="Player" type="CharacterBody3D"]
+[node name="Player" type="CharacterBody3D" node_paths=PackedStringArray("animPlayerNode", "sprite3DNode")]
 script = ExtResource("1_pdahh")
+animPlayerNode = NodePath("AnimationPlayer")
+sprite3DNode = NodePath("Sprite3D")
 
 [node name="Sprite3D" type="Sprite3D" parent="."]
 texture = ExtResource("2_vuax3")
