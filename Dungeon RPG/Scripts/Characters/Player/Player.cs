@@ -11,7 +11,7 @@ public partial class Player : CharacterBody3D
 
     public override void _Ready()
     {
-        GD.Print(sprite3DNode.Name);
+        animPlayerNode.Play("Idle");
     }
 
     public override void _PhysicsProcess(double delta)
@@ -27,5 +27,14 @@ public partial class Player : CharacterBody3D
         direction = Input.GetVector(
             "MoveLeft", "MoveRight", "MoveForward", "MoveBackward"
         );
+
+        if (direction == Vector2.Zero)
+        {
+            animPlayerNode.Play("Idle");
+        }
+        else
+        {
+            animPlayerNode.Play("Move");
+        }
     }
 }
