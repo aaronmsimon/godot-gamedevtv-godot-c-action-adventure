@@ -35,7 +35,7 @@
 [sub_resource type="Animation" id="Animation_k164c"]
 resource_name = "Idle"
 loop_mode = 1
-step = 0.0555556
+step = 1.0
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -78,6 +78,7 @@ animPlayerNode = NodePath("AnimationPlayer")
 sprite3DNode = NodePath("Sprite3D")
 
 [node name="Sprite3D" type="Sprite3D" parent="."]
+texture_filter = 0
 texture = ExtResource("2_vuax3")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
