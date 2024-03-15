@@ -50,7 +50,7 @@ by [GameDev.tv](https://www.gamedev.tv)
 ### State Machine
 - Section Intro - State Machine (0:53)
 - What Is a State Machine (2:32)
-- Creating an Idle and Move State (8:39)
+- [Creating an Idle and Move State](https://github.com/aaronmsimon/godot-gamedevtv-godot-c-action-adventure/commit/92de2cf92d225c7e768b62578474d0485fc00565) (8:39)
 - Building the State Machine (10:39)
 - Transitioning States (15:22)
 - Disabling Nodes (6:51)
