@@ -25,6 +25,7 @@ public partial class StateMachine : Node
 
         if (newState == null) { return; }
 
+        currentState.Notification(5002);
         currentState = newState;
         currentState.Notification(5001);
     }
