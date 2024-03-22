@@ -3,7 +3,7 @@ using System;
 
 public partial class PlayerMoveState : PlayerState
 {
-    [Export] private float walkSpeed = 5;
+    [Export(PropertyHint.Range, "0,20,0.1")] private float walkSpeed = 5;
 
     public override void _PhysicsProcess(double delta)
     {

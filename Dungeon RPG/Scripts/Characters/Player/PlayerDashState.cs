@@ -4,7 +4,7 @@ using System;
 public partial class PlayerDashState : PlayerState
 {
     [Export] private Timer dashTimerNode;
-    [Export] private float dashSpeed = 10;
+    [Export(PropertyHint.Range, "0,20,0.1")] private float dashSpeed = 10;
 
     public override void _Ready()
     {
