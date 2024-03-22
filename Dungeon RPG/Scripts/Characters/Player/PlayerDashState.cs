@@ -21,19 +21,19 @@ public partial class PlayerDashState : PlayerState
 
     private void HandleDashTimeout()
     {
-        characterNode.stateMachineNode.SwitchState<PlayerIdleState>();
+        characterNode.StateMachineNode.SwitchState<PlayerIdleState>();
         characterNode.Velocity = Vector3.Zero;
     }
 
     protected override void EnterState()
     {
-        characterNode.animPlayerNode.Play(GameConstants.ANIM_DASH);
+        characterNode.AnimPlayerNode.Play(GameConstants.ANIM_DASH);
         characterNode.Velocity = new(
             characterNode.direction.X, 0, characterNode.direction.Y
         );
 
         if (characterNode.direction == Vector2.Zero) {
-            characterNode.Velocity = characterNode.sprite3DNode.FlipH ? Vector3.Left : Vector3.Right;
+            characterNode.Velocity = characterNode.Sprite3DNode.FlipH ? Vector3.Left : Vector3.Right;
         }
 
         characterNode.Velocity *= dashSpeed;

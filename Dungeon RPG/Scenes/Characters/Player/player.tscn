@@ -100,11 +100,11 @@ _data = {
 "Move": SubResource("Animation_mfdut")
 }
 
-[node name="Player" type="CharacterBody3D" node_paths=PackedStringArray("animPlayerNode", "sprite3DNode", "stateMachineNode")]
+[node name="Player" type="CharacterBody3D" node_paths=PackedStringArray("AnimPlayerNode", "Sprite3DNode", "StateMachineNode")]
 script = ExtResource("1_pdahh")
-animPlayerNode = NodePath("AnimationPlayer")
-sprite3DNode = NodePath("Sprite3D")
-stateMachineNode = NodePath("StateMachine")
+AnimPlayerNode = NodePath("AnimationPlayer")
+Sprite3DNode = NodePath("Sprite3D")
+StateMachineNode = NodePath("StateMachine")
 
 [node name="Sprite3D" type="Sprite3D" parent="."]
 texture_filter = 0
