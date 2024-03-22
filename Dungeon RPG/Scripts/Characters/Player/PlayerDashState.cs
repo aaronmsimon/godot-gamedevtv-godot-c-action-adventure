@@ -4,7 +4,7 @@ using System;
 public partial class PlayerDashState : PlayerState
 {
     [Export] private Timer dashTimerNode;
-    [Export] private float speed = 10;
+    [Export] private float dashSpeed = 10;
 
     public override void _Ready()
     {
@@ -36,7 +36,7 @@ public partial class PlayerDashState : PlayerState
             characterNode.Velocity = characterNode.sprite3DNode.FlipH ? Vector3.Left : Vector3.Right;
         }
 
-        characterNode.Velocity *= speed;
+        characterNode.Velocity *= dashSpeed;
         dashTimerNode.Start();
     }
 
