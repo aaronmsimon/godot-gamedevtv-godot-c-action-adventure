@@ -66,7 +66,7 @@ by [GameDev.tv](https://www.gamedev.tv)
 
 ### Designing a Level
 - Section Intro - Designing a Level (0:50)
-- Preparing Our Models (8:14)
+- [Preparing Our Models](https://github.com/aaronmsimon/godot-gamedevtv-godot-c-action-adventure/commit/ac12f590004a1c679b4629424b54fbbfaf5f1097) (8:14)
 - Using a Grid Map (12:34)
 - Attaching a Camera to the Player (5:34)
 - Adding Collision (13:05)
