@@ -1,4 +1,4 @@
-[gd_scene load_steps=46 format=3 uid="uid://c2vll5yu67387"]
+[gd_scene load_steps=47 format=3 uid="uid://c2vll5yu67387"]
 
 [ext_resource type="Texture2D" uid="uid://d1f2bp7pwy4ep" path="res://Assets/Sprites/Characters/Player/Running/Running_001.png" id="1_1tj7u"]
 [ext_resource type="Script" path="res://Scripts/Characters/Player/Player.cs" id="1_pdahh"]
@@ -100,7 +100,10 @@ _data = {
 "Move": SubResource("Animation_mfdut")
 }
 
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_tb1wi"]
+
 [node name="Player" type="CharacterBody3D" node_paths=PackedStringArray("AnimPlayerNode", "Sprite3DNode", "StateMachineNode")]
+collision_layer = 2
 script = ExtResource("1_pdahh")
 AnimPlayerNode = NodePath("AnimationPlayer")
 Sprite3DNode = NodePath("Sprite3D")
@@ -134,3 +137,7 @@ dashTimerNode = NodePath("Timer")
 [node name="Timer" type="Timer" parent="StateMachine/DashState"]
 wait_time = 0.4
 one_shot = true
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.295577, 0)
+shape = SubResource("CapsuleShape3D_tb1wi")
